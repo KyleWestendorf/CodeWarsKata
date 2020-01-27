@@ -1,3 +1,4 @@
+// Note: Some assitance pulled from the following repository: https://github.com/Bachyla/CodeWars/blob/master/JavaScript/5%20kuy/using-closures-to-share-class-state.js
 
 var Cat = (function (name, weight) {
 
@@ -7,10 +8,10 @@ var Cat = (function (name, weight) {
  let averageWeight = 0;
   
  function Cat(name, weight) {
- if(!(weight || name))
- {
- throw new Error();
+ if (!(weight || name)){
+  throw new Error();
  }
+ 
   numberCats++;
   this.name = name;
   
